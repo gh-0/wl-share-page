@@ -1,0 +1,37 @@
+.content {
+  font-size: 0.43rem;
+  padding: 0;
+  margin: 0;
+  padding-left: 1.3rem;
+}
+
+.actionIcon {
+  width: 0.53rem;
+  height: 0.53rem;
+  vertical-align: baseline;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  top: .12rem;
+}
+
+.actionWrap {
+  padding-left: 1.3rem;
+}
+
+.action:last-child {
+  margin-right: 0;
+}
+
+.action {
+  position: relative;
+  background: #F5F5F7;
+  border-radius: 26px;
+  color: #666666;
+  margin-right: 8px;
+  font-size: .32rem;
+}
+
+.rightAction {
+  float: right;
+}

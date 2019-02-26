@@ -1,0 +1,95 @@
+
+.question {
+  background: #ffffff;
+  padding: 0 .27rem;
+}
+
+.tag:first-child {
+  margin-left: 0;
+}
+
+.tag {
+  float: left;
+  margin: .4rem 0 .27rem .27rem;
+}
+
+.question {
+  background: #ffffff;
+  padding-bottom: 8px;
+}
+
+.questionContent {
+  margin: 0;
+  font-size: 0.48rem;
+  line-height: 0.67rem;
+}
+
+.authorInfo {
+  margin: 16px 0;
+}
+
+
+.headImage {
+  width: 1.07rem;
+  height: 1.07rem;
+  border-radius: 50%;
+  float: left;
+}
+
+.userInfo {
+  height: 1.07rem;
+  float: left;
+}
+
+.userInfo .userName {
+  font-size: 0.37rem;
+  font-weight: normal;
+  color: #666666;
+}
+
+.userInfo p {
+  font-weight: lighter;
+  font-size: 0.32rem;
+  color: #999999;
+  margin: 0 .26rem;
+  line-height: .535rem;
+}
+
+.readTotal {
+  margin: 0;
+  float: right;
+  position: absolute;
+  font-size: 0.32rem;
+  color: #999999;
+  bottom: 0;
+  right: 0;
+  line-height: .535rem;
+}
+
+.answerWrap {
+  margin-top: 8px;
+  background: #fff;
+  padding: 0.4rem 0;
+  padding-top: 0;
+}
+
+.answerTitle {
+  margin: 0;
+  padding: 0 .27rem;
+  font-size: 0.37rem;
+  line-height: 1.07rem;
+  height: 1.07rem;
+  color: #000;
+  font-weight: normal;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.answersItemWrap {
+  padding: .27rem .27rem 0 .27rem;
+}
+
+.hotAnswerWrap {
+  position: relative;
+  padding-bottom: 16px;
+  border-bottom: 8px solid #f0f0f0;
+}

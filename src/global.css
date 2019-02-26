@@ -1,0 +1,25 @@
+* {
+  box-sizing: border-box;
+  font-family: "PingFangSC-Medium"'Courier New', Courier, monospace;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  font-size: 37.38317757009346px;
+  background: #f4f4f4;
+}
+
+body {
+  margin: 0;
+}
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}

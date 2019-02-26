@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>ic_questionlist_detail_comment_oppose_n@2x</title>
+    <desc>Created with Sketch.</desc>
+    <g id="5.0.7问题分享" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="问题详情分享-纯文本" transform="translate(-676.000000, -865.000000)" fill-rule="nonzero">
+            <g id="回答" transform="translate(0.000000, 602.000000)">
+                <g id="反对" transform="translate(662.000000, 257.000000)">
+                    <g id="ic_questionlist_detail_comment_oppose_n" transform="translate(14.000000, 6.000000)">
+                        <rect id="Rectangle" fill="#FFFFFF" opacity="0.01" x="0" y="0" width="40" height="40"></rect>
+                        <path d="M20.8574929,11.4291549 L31.0913025,28.4855042 C31.3754507,28.9590845 31.2218856,29.5733448 30.7483054,29.8574929 C30.59289,29.9507422 30.4150536,30 30.2338096,30 L9.76619038,30 C9.21390563,30 8.76619038,29.5522847 8.76619038,29 C8.76619038,28.8187561 8.81544821,28.6409196 8.90869745,28.4855042 L19.1425071,11.4291549 C19.4266552,10.9555746 20.0409155,10.8020095 20.5144958,11.0861577 C20.6552454,11.1706075 20.7730432,11.2884053 20.8574929,11.4291549 Z" id="Triangle" fill="#999999" transform="translate(20.000000, 20.000000) scale(1, -1) translate(-20.000000, -20.000000) "></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

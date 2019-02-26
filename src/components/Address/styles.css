@@ -1,0 +1,18 @@
+.address {
+  margin-top: .4rem;
+  padding: .08rem .2rem;
+  background: #F2F3F5;
+  border-radius: 26px;
+  float: left;
+  font-size: 0.32rem;
+  height: 0.69rem;
+}
+
+.address img {
+  height: .53rem;
+  vertical-align: bottom;
+}
+
+.address span {
+  line-height: .53rem;
+}

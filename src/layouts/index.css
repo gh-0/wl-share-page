@@ -1,0 +1,70 @@
+.content {
+  margin-top: 1.2rem;
+}
+
+.wrap {
+  max-width: 600px !important;
+  margin: 0 auto !important;
+}
+
+.pageHeader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1.2rem;
+  font-size: 0.37rem;
+  padding: .2rem;
+  background: rgba(0, 0, 0, .7);
+  color: #ffffff;
+  z-index: 1;
+}
+
+.pageHeader span {
+  margin-left: 4px;
+  line-height: .8rem;
+}
+
+.pageHeader img {
+  float: left;
+  width: .8rem;
+}
+
+.pageHeader .download {
+  float: right;
+  height: .8rem;
+  line-height: .8rem;
+  color: #FF4050;
+  background: #ffffff;
+  padding: 0 .4rem;
+  border-radius: .4rem 
+}
+
+.pageFooter {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: .93rem 0;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0), white .93rem);
+  margin-top: -3.2rem;
+  z-index: 1;
+}
+
+.pageFooter img {
+  width: .67rem;
+  display: block;
+  margin: 0 auto;
+}
+
+.pageFooter .openBtn {
+  font-size: 0.43rem;
+  background: #FF4050;
+  color: #ffffff;
+  width: 8.67rem;
+  height: 1.07rem;
+  line-height: 1.07rem;
+  text-align: center;
+  border-radius: 0.6rem;
+  margin: .4rem auto;
+}

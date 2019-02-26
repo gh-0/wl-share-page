@@ -1,0 +1,63 @@
+.wrap {
+  position: relative;
+}
+
+.headImageWrap {
+  width: 1.07rem;
+  height: 1.07rem;
+  float: left;
+  position: relative;
+}
+
+.headImage {
+  top: 0;
+  left: 0;
+  position: relative;
+  width: 1.07rem;
+  height: 1.07rem;
+  border-radius: 50%;
+}
+
+.vIcon {
+  position: absolute;
+  display: block;
+  height: 0.37rem;
+  width: 0.37rem;
+  bottom: 0;
+  right: 0;
+}
+
+.info {
+  float: left;
+}
+
+.name {
+  font-size: 0.37rem;
+  font-weight: bold;
+  margin: 0 .26rem;
+  color: #000;
+  line-height: .54rem;
+}
+
+.name span {
+  font-size: 0.32rem;
+  color: #A7A8AB;
+  font-weight: normal;
+  margin-left: 4px;
+}
+
+.date {
+  font-weight: lighter;
+  font-size: 0.32rem;
+  color: #999999;
+  margin: 0 .26rem;
+  line-height: .53rem;
+}
+
+.extra {
+  position: absolute;
+  right: 0;
+  top: 0;
+  max-height: 1.07rem;
+  width: 3.21rem
+}

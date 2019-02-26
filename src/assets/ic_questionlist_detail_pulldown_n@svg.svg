@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>ic_questionlist_detail_pulldown_n@2x</title>
+    <desc>Created with Sketch.</desc>
+    <g id="5.0.7问题分享" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="问题详情分享-纯文本" transform="translate(-690.000000, -542.000000)">
+            <g id="全部回答" transform="translate(0.000000, 522.000000)">
+                <g id="ic_questionlist_detail_pulldown_n" transform="translate(690.000000, 20.000000)">
+                    <rect id="Rectangle" fill="#FFFFFF" fill-rule="nonzero" opacity="0.01" x="0" y="0" width="40" height="40"></rect>
+                    <g id="箭头_列表展开" transform="translate(6.000000, 12.000000)" fill="#8A8A8F">
+                        <path d="M12.9996524,10.4146308 L5.22147778,2.6364562 C4.83095349,2.24593191 4.19778851,2.24593191 3.80726422,2.6364562 L2.39305066,4.05066977 C2.00252636,4.44119406 2.00252636,5.07435904 2.39305066,5.46488333 L12.2915875,15.3634202 C12.6821118,15.7539445 13.3152768,15.7539445 13.7058011,15.3634202 L23.6055944,5.46362685 C23.9961187,5.07310256 23.9961187,4.43993758 23.6055944,4.04941329 L22.1923389,2.6361578 C21.8018146,2.24563351 21.1686497,2.24563351 20.7781254,2.6361578 L12.9996524,10.4146308 Z" id="Path"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

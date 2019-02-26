@@ -1,0 +1,107 @@
+.cover {
+  width: 100%;
+  display: block;
+}
+
+.articleWrap {
+  padding: 0.4rem;
+  background: #fff;
+}
+
+.userBar {
+  position: relative;
+}
+
+.headImage {
+  width: 1.07rem;
+  height: 1.07rem;
+  border-radius: 50%;
+  float: left;
+}
+
+.userInfo {
+  height: 1.07rem;
+  float: left;
+}
+
+.userInfo .userName {
+  font-size: 0.37rem;
+  font-weight: normal;
+  color: #666666;
+}
+
+.userInfo p {
+  font-weight: lighter;
+  font-size: 0.32rem;
+  color: #999999;
+  margin: 0 .26rem;
+  line-height: .535rem;
+}
+
+.readTotal {
+  margin: 0;
+  float: right;
+  position: absolute;
+  font-size: 0.32rem;
+  color: #999999;
+  bottom: 0;
+  right: 0;
+  line-height: .535rem;
+}
+
+.contentWrap {
+  margin-top: .2rem;
+}
+
+.contentWrap h1 {
+  font-size: 0.48rem;
+  line-height: 0.67rem;
+}
+
+.topicWrap h2 {
+  font-size: 0.37rem;
+  line-height: 0.53rem;
+}
+
+.topicWrap span {
+  float: left;
+  font-size: 0.37rem;
+  line-height: 0.53rem;
+  color: #FF4050;
+  border: 1px solid #FF4050;
+  margin-right: 8px;
+  margin-bottom: 8px;
+  padding: 4px 8px;
+  border-radius: 0.11rem;
+}
+
+.topicWrap span::before {
+  display: inline;
+  content: "#";
+}
+
+.commentWrap {
+  margin-top: 8px;
+  background: #fff;
+  padding: 0.4rem 0;
+  padding-top: 0;
+}
+
+.commentWrap .commentTotal {
+  margin: 0;
+  padding: 0 .27rem;
+  font-size: 0.37rem;
+  line-height: 1.07rem;
+  height: 1.07rem;
+  color: #666;
+  font-weight: normal;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.commentWrap .commentTotal span {
+  color: #333333;
+}
+
+.commentListWrap {
+  padding: 0.4rem 0.4rem;
+}

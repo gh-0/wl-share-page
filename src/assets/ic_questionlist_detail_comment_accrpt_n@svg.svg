@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="80px" height="80px" viewBox="0 0 80 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>ic_questionlist_detail_comment_accrpt_n@2x</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="-1.95305032e-16 0 80 0 80 80 0 80"></polygon>
+        <linearGradient x1="50%" y1="-2.48949813e-15%" x2="50%" y2="94.921832%" id="linearGradient-3">
+            <stop stop-color="#FF2626" offset="0%"></stop>
+            <stop stop-color="#FF3355" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="5.0.7问题分享" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="问题详情分享-纯文本结束" transform="translate(0.000000, -602.000000)">
+            <g id="回答" transform="translate(0.000000, 602.000000)">
+                <g id="ic_questionlist_detail_comment_accrpt_n">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="Rectangle" fill-opacity="0.01" fill="#FFFFFF" fill-rule="nonzero" xlink:href="#path-1"></use>
+                    <g mask="url(#mask-2)">
+                        <g transform="translate(25.982756, 25.982756) rotate(-45.000000) translate(-25.982756, -25.982756) translate(-38.017244, 7.982756)">
+                            <rect id="Rectangle-4" stroke="#FFFFFF" stroke-width="2" fill="url(#linearGradient-3)" fill-rule="evenodd" x="1" y="1" width="126" height="34"></rect>
+                            <text id="采纳" stroke="none" fill="none" font-family="PingFangSC-Semibold, PingFang SC" font-size="22" font-weight="500">
+                                <tspan x="40.5857864" y="26.2426407" fill="#FFFFFF">采纳</tspan>
+                            </text>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
