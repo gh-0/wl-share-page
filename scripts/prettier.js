@@ -41,7 +41,7 @@ files.forEach(file => {
     const output = prettier.format(input, withParserOptions);
     if (output !== input) {
       fs.writeFileSync(file, output, 'utf8');
-      console.log(`\x1b[34m ${file} is prettier`);
+      console.log(`${file} is prettier`);
     }
   } catch (e) {
     didError = true;

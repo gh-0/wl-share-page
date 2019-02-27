@@ -4,12 +4,13 @@
   background: #F2F3F5;
   border-radius: 0.32rem;
   height: 0.64rem;
+  line-height: .44rem;
   padding: .1rem .265rem;
   min-width: 1.2rem;
   text-align: center;
 }
 
 .tag.large {
-  font-size: 0.21rem;
+  font-size: 0.32rem;
   padding: .08rem .14rem;
 }

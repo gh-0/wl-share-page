@@ -57,6 +57,7 @@ class Question extends React.Component {
         <section className={styles.question}>
           <div className="clearfix">
             {detail &&
+              detail.genes &&
               detail.genes.map(g => (
                 <Tag key={g} className={styles.tag}>
                   {genesMap(g)}

@@ -2,10 +2,12 @@ import React from 'react';
 import Image from '@/components/Image';
 import Video from '@/components/Video';
 import Audio from '@/components/Audio';
+import Vote from '@/components/Vote';
 
 class MediaContent extends React.Component {
   render() {
     const { images, audio, voteVo, video } = this.props;
+    const voteEl = voteVo ? <Vote voteVo={voteVo} /> : null;
     const imagesContentEl =
       images &&
       images.map((url, _, arr) => {
@@ -60,6 +62,7 @@ class MediaContent extends React.Component {
           whiteSpace: 'nowrap',
         }}
       >
+        {voteEl}
         {audioEl}
         {videoEl}
         {imagesContentEl}
