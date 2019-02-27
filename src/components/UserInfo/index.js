@@ -14,7 +14,7 @@ class UserInfo extends React.Component {
         <div className={styles.info}>
           <p className={styles.name}>
             {username}
-            <span>{level ? `Lv.${level}` : ''}</span>
+            <span style={{ fontFamily: 'DINCond-Bold' }}>{level ? `Lv.${level}` : ''}</span>
           </p>
           <p className={styles.date}>{date}</p>
         </div>

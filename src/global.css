@@ -1,6 +1,11 @@
 * {
   box-sizing: border-box;
-  font-family: "PingFangSC-Medium"'Courier New', Courier, monospace;
+  font-family: "PingFangSC-Medium";
+}
+
+@font-face {
+  font-family: "DINCond-Bold";
+  src: url(./assets/dincond_bold.otf) format('OpenType')
 }
 
 html,

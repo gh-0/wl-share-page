@@ -1,5 +1,6 @@
 import React from 'react';
 import { connect } from 'dva';
+import { Facebook, Instagram } from 'react-content-loader';
 import Tag from '@/components/Tag';
 import UserInfo from '@/components/UserInfo';
 import Address from '@/components/Address';
@@ -52,6 +53,14 @@ class Question extends React.Component {
     const { detail, answers, loading } = this.props;
     const hotInd = answers.findIndex(a => a.hot);
     const acceptInd = answers.findIndex(a => a.accept);
+
+    const loaderEl = (
+      <div style={{ margin: '.4rem', paddingTop: '1.2rem', height: '100vh' }}>
+        <Facebook />
+        <Instagram />
+      </div>
+    );
+    if (loading) return loaderEl;
     return (
       <div className={styles.wrap}>
         <section className={styles.question}>
@@ -84,7 +93,15 @@ class Question extends React.Component {
               <UserInfo
                 {...detail}
                 extra={
-                  <span style={{ fontSize: '0.32rem', top: 0, right: 0, position: 'absolute' }}>
+                  <span
+                    style={{
+                      fontFamily: 'DINCond-Bold',
+                      fontSize: '0.37rem',
+                      top: 0,
+                      right: 0,
+                      position: 'absolute',
+                    }}
+                  >
                     {detail && detail.score} 人气
                   </span>
                 }

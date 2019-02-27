@@ -5,7 +5,6 @@ import Comment from '@/components/Comment';
 import Address from '@/components/Address';
 import styles from './styles.css';
 import iframe from './iframe.less';
-import localIcon from '@/assets/ic_tweet_detail_location_n@svg.svg';
 import { Facebook, Instagram } from 'react-content-loader';
 
 class City extends React.Component {

@@ -35,6 +35,7 @@ class VoteItem extends React.Component {
             </span>
             <span
               style={{
+                fontFamily: 'DINCond-Bold',
                 fontSize: '.27rem',
                 color: color || '#FF4050',
                 letterSpacing: 0,
@@ -47,7 +48,11 @@ class VoteItem extends React.Component {
           </div>
           <div className={styles.progress} style={{ borderColor: borderColor }}>
             <div
-              style={{ background: progressColor, width: `${parseInt((100 * poll) / total)}%` }}
+              style={{
+                background: progressColor,
+                minWidth: '.6rem',
+                width: `${parseInt((100 * poll) / total)}%`,
+              }}
               className={styles.progressBar}
             />
             <span style={{ margin: '8px' }}>

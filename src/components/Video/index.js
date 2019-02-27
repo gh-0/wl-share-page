@@ -27,7 +27,7 @@ class Video extends React.Component {
     return (
       <div style={{ width: '100%', position: 'relative' }}>
         <video
-          poster={src.split("?")[0]+"?x-oss-process=video/snapshot,t_50,f_jpg,w_0,h_0,m_fast"}
+          poster={src.split('?')[0] + '?x-oss-process=video/snapshot,t_50,f_jpg,w_0,h_0,m_fast'}
           // preload="metadata"
           controls={true}
           onEnded={() => this.setState({ play: false })}
@@ -35,8 +35,7 @@ class Video extends React.Component {
           width="100%"
           src={src}
           ref={v => (this.video = v)}
-        >
-        </video>
+        />
       </div>
     );
   }
