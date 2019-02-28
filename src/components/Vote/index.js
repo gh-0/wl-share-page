@@ -1,12 +1,13 @@
 import React from 'react';
 import VoteItem from './VoteItem';
+import openApp from '@/utils/open-app';
 
 class Vote extends React.Component {
   render() {
     const { voteVo } = this.props;
     const { option, vote, total } = voteVo;
     return (
-      <div>
+      <div onClick={openApp}>
         {option.map((o, ind) => (
           <VoteItem
             color={ind === 0 ? '#FF4050' : '#000'}

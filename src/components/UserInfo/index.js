@@ -1,12 +1,13 @@
 import React from 'react';
 import styles from './styles.css';
 import vIcon from '@/assets/ic_authentication_n@svg.svg';
+import openApp from '@/utils/open-app';
 
 class UserInfo extends React.Component {
   render() {
     const { auth, headImage, username, date, extra, level } = this.props;
     return (
-      <div className={`${styles.wrap} clearfix`}>
+      <div className={`${styles.wrap} clearfix`} onClick={openApp}>
         <div className={styles.headImageWrap}>
           <img className={styles.headImage} src={headImage} />
           {auth && <img className={styles.vIcon} src={vIcon} />}

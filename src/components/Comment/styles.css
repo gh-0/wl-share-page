@@ -2,9 +2,10 @@
   margin-bottom: .6rem;
 }
 .comment {
-  font-size: 0.35rem;
-  margin: 0;
+  font-size: 0.32rem;
+  margin: 8px 0 0;
   padding: 0;
+  line-height: .8rem;
 }
 
 .commentWrap {

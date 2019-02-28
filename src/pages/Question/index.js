@@ -11,6 +11,7 @@ import pulldownIcon from '@/assets/ic_questionlist_detail_pulldown_n@svg.svg';
 import hotIcon from '@/assets/ic_questionlist_detail_comment_hot_n@svg.svg';
 import acceptIcon from '@/assets/ic_questionlist_detail_comment_accrpt_n@svg.svg';
 import emptyHolder from '@/assets/空状态@svg.svg';
+import openApp from '@/utils/open-app';
 
 const genesMap = g => {
   return {
@@ -76,7 +77,7 @@ class Question extends React.Component {
               <Tag
                 size="large"
                 color="#FFF"
-                background={anCoinBackground(detail.anCoin)}
+                background={acceptInd>=0? "linear-gradient(-180deg, #E1E1E3 0%, #C8C9CC 100%)":anCoinBackground(detail.anCoin)}
                 className={styles.tag}
                 style={{ float: 'right' }}
               >
@@ -113,7 +114,7 @@ class Question extends React.Component {
         <section className={styles.answerWrap}>
           <h2 className={styles.answerTitle}>
             全部回答：{answers && answers.length}
-            <span style={{ float: 'right', color: '#8A8A8F' }}>
+            <span style={{ float: 'right', color: '#8A8A8F' }} onClick={openApp}>
               人气排序
               <img
                 src={pulldownIcon}

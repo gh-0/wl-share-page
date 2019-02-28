@@ -23,6 +23,7 @@
 .pageHeader span {
   margin-left: 4px;
   line-height: .8rem;
+  height: .8rem;
 }
 
 .pageHeader img {
@@ -32,13 +33,28 @@
 
 .pageHeader .download {
   float: right;
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
   height: .8rem;
   line-height: .8rem;
   color: #FF4050;
+  text-align: center;
+  display: flex;
+  align-items: center;
   background: #ffffff;
   padding: 0 .4rem;
-  border-radius: .4rem 
+  border-radius: .4rem;
 }
+
+/* .pageHeader .download::before {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  width: 0;
+  height: 100%;
+  margin-top: 1px;
+} */
 
 .pageFooter {
   position: relative;

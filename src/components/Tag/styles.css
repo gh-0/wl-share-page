@@ -12,5 +12,8 @@
 
 .tag.large {
   font-size: 0.32rem;
-  padding: .08rem .14rem;
+  line-height: .48rem;
+  height: .8rem;
+  border-radius: 0.4rem;
+  padding: .16rem .32rem;
 }
