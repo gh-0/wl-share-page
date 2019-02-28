@@ -1,7 +1,7 @@
 import React from 'react';
 import UserInfo from '@/components/UserInfo';
 import Tag from '@/components/Tag';
-import Image from '@/components/Image'
+import Image from '@/components/Image';
 import moreIcon from '@/assets/ic_tweet_detail_comment_more_n@svg.svg';
 import supportIcon from '@/assets/ic_questionlist_detail_comment_support_n@svg.svg';
 import opposeIcon from '@/assets/ic_questionlist_detail_comment_oppose_n@svg.svg';
@@ -23,11 +23,16 @@ class Answer extends React.Component {
           }
         />
         <p className={styles.content}>{content}</p>
-        { image && <Image src={image} style={{
-          height: "1.8rem",
-          width: "1.8rem",
-          margin: "8px 1.3rem 0"
-        }}/>}
+        {image && (
+          <Image
+            src={image}
+            style={{
+              height: '1.8rem',
+              width: '1.8rem',
+              margin: '8px 1.3rem 0',
+            }}
+          />
+        )}
         <section className={styles.actionWrap}>
           <Tag className={styles.action}>6条回复</Tag>
           <div className={styles.rightAction}>
