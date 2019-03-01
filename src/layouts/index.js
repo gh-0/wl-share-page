@@ -16,7 +16,9 @@ function BasicLayout(props) {
       <div className={styles.content}>{props.children}</div>
       <footer className={styles.pageFooter}>
         <img src={arrowIcon} />
-        <div onClick={openApp} className={styles.openBtn}>打开问聊，一起参与回答</div>
+        <div onClick={openApp} className={styles.openBtn}>
+          打开问聊，一起参与回答
+        </div>
       </footer>
     </div>
   );

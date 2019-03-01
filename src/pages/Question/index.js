@@ -77,7 +77,11 @@ class Question extends React.Component {
               <Tag
                 size="large"
                 color="#FFF"
-                background={acceptInd>=0? "linear-gradient(-180deg, #E1E1E3 0%, #C8C9CC 100%)":anCoinBackground(detail.anCoin)}
+                background={
+                  acceptInd >= 0
+                    ? 'linear-gradient(-180deg, #E1E1E3 0%, #C8C9CC 100%)'
+                    : anCoinBackground(detail.anCoin)
+                }
                 className={styles.tag}
                 style={{ float: 'right' }}
               >

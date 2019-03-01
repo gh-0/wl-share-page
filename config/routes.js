@@ -1,13 +1,26 @@
 export default [
+  { path: '/', redirect: '/download' },
   {
-    path: '/',
+    path: '/share/',
     component: '../layouts',
     routes: [
-      { path: '/city/:id', component: './City' },
+      { path: '/share/city/:id', component: './City' },
       {
-        path: '/question/:id',
+        path: '/share/question/:id',
         component: './Question',
       },
     ],
+  },
+  {
+    path: '/download',
+    component: './Download',
+  },
+  {
+    path: '/wechat',
+    component: './Wechat',
+  },
+  {
+    path: '/delete',
+    component: './Delete',
   },
 ];
