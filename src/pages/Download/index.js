@@ -2,9 +2,14 @@ import React from 'react';
 import clientType from '@/utils/client-type';
 import backgroundImg from '@/assets/插画@svg.svg';
 import logoIcon from '@/assets/logo.png';
+import openApp from '@/utils/open-app';
 
 class Download extends React.Component {
   render() {
+    const types = clientType();
+    if (types.indexOf('wechat') === -1) {
+      openApp();    
+    }
     return (
       <div
         style={{

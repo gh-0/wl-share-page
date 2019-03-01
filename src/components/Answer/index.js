@@ -10,7 +10,6 @@ import styles from './styles.css';
 class Answer extends React.Component {
   render() {
     const { content, image } = this.props;
-    console.log(image);
     return (
       <div>
         <UserInfo
