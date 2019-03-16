@@ -2,7 +2,7 @@ import React from 'react';
 import Download from '@/pages/Download';
 import backgroundImg from '@/assets/插画@svg.svg';
 import iosHelpIcon from '@/assets/引导图@3x.png';
-import helpIcon from "@/assets/引导图-浏览器@3x.png";
+import helpIcon from '@/assets/引导图-浏览器@3x.png';
 import clientType from '@/utils/client-type';
 
 class Wechat extends React.Component {
@@ -39,7 +39,7 @@ class Wechat extends React.Component {
             width: '7.2rem',
             margin: '32px',
           }}
-          src={types.indexOf("ios")!==-1? iosHelpIcon: helpIcon}
+          src={types.indexOf('ios') !== -1 ? iosHelpIcon : helpIcon}
         />
       </div>
     );

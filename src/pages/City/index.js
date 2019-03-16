@@ -41,7 +41,7 @@ class City extends React.Component {
             </div>
             <p className={styles.readTotal}>{detail && detail.readNum} 阅读</p>
           </div>
-          <Address address={detail && detail.address} />
+          {/* <Address address={detail && detail.address} /> */}
           <div className={styles.contentWrap}>
             <h1>{detail && detail.title}</h1>
             <div className={iframe.wrap} dangerouslySetInnerHTML={{ __html: content }} />

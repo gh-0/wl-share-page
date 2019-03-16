@@ -1,5 +1,6 @@
 .content {
   margin-top: 1.2rem;
+  min-height: 80vh;
 }
 
 .wrap {
@@ -74,13 +75,16 @@
 }
 
 .pageFooter .openBtn {
-  font-size: 0.43rem;
+  font-size: 0.4rem;
   background: #FF4050;
   color: #ffffff;
-  width: 8.67rem;
-  height: 1.07rem;
-  line-height: 1.07rem;
+  width: 8.6rem;
+  /* padding: 0 2.1rem; */
+  height: 1rem;
+  line-height: 1rem;
   text-align: center;
+  display: flex;
+  justify-content: center;
   border-radius: 0.6rem;
   margin: .4rem auto;
 }

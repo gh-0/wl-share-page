@@ -21,14 +21,14 @@ class Comment extends React.Component {
         />
         <div className={styles.commentWrap}>
           <p className={styles.comment}>{content}</p>
-          <Image
+          {image? <Image
             src={image}
             style={{
               height: '1.8rem',
               width: '1.8rem',
               margin: '0',
             }}
-          />
+          />:null}
           <div className={styles.actionWrap}>
             {replyNum ? <div className={`${styles.reply} clearfix`}>{replyNum}条回复</div> : null}
             <div className={styles.like}>

@@ -8,7 +8,7 @@ class Download extends React.Component {
   render() {
     const types = clientType();
     if (types.indexOf('wechat') === -1) {
-      openApp();    
+      openApp();
     }
     return (
       <div
@@ -48,18 +48,18 @@ class Download extends React.Component {
               backgroundImage: 'linear-gradient(-135deg, #FF3344 0%, #FF6040 100%)',
               borderRadius: '45px',
               marginTop: '8vh',
-              display: "flex",
-              alignItems: "center"
+              display: 'flex',
+              alignItems: 'center',
             }}
           >
             <a
               style={{
                 color: '#fff',
                 fontSize: '0.4rem',
-                textDecoration: "none",
-                display: "block",
-                width: "100%",
-                textAlign: 'center'
+                textDecoration: 'none',
+                display: 'block',
+                width: '100%',
+                textAlign: 'center',
               }}
               href={
                 clientType().indexOf('ios') !== -1

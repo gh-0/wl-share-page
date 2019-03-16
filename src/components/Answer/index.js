@@ -9,7 +9,7 @@ import styles from './styles.css';
 
 class Answer extends React.Component {
   render() {
-    const { content, image } = this.props;
+    const { content, image, replyNum, likeNum } = this.props;
     return (
       <div>
         <UserInfo
@@ -33,14 +33,14 @@ class Answer extends React.Component {
           />
         )}
         <section className={styles.actionWrap}>
-          <Tag className={styles.action}>6条回复</Tag>
+          {replyNum?<Tag className={styles.action}>{replyNum}条回复</Tag>: null}
           <div className={styles.rightAction}>
             <Tag className={styles.action}>互动</Tag>
             <Tag className={styles.action}>
-              <img src={supportIcon} className={styles.actionIcon} /> 234
+              <img src={supportIcon} className={styles.actionIcon} /> {likeNum}
             </Tag>
             <Tag className={styles.action}>
-              <img src={opposeIcon} className={styles.actionIcon} /> 234
+              <img src={opposeIcon} className={styles.actionIcon} />
             </Tag>
           </div>
         </section>

@@ -11,7 +11,7 @@
 html,
 body,
 #root {
-  height: 100%;
+  /* height: 100%; */
   font-size: 36px;
   background: #f4f4f4;
 }
@@ -28,6 +28,17 @@ body {
   clear: both;
   height: 0;
 }
+
 div {
   line-height: 12px;
+}
+
+p,
+div,
+section {
+  font-size: 14px;
+}
+
+.p-center {
+  text-align: center;
 }

@@ -1,5 +1,7 @@
 export default [
   { path: '/', redirect: '/download' },
+
+  // share
   {
     path: '/share/',
     component: '../layouts',
@@ -11,6 +13,22 @@ export default [
       },
     ],
   },
+  
+  // preview
+  {
+    path: '/preview/',
+    component: '../layouts/BaseLayout',
+    routes: [{
+        path: '/preview/city/:id',
+        component: './City'
+      },
+      {
+        path: '/preview/question/:id',
+        component: './Question',
+      },
+    ],
+  },
+
   {
     path: '/download',
     component: './Download',

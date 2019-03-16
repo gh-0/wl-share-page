@@ -111,7 +111,7 @@ class Question extends React.Component {
                   </span>
                 }
               />
-              <Address {...detail} />
+              {/* <Address {...detail} /> */}
             </div>
           </div>
         </section>

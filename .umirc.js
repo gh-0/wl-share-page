@@ -25,6 +25,7 @@ export default {
   ],
   routes,
   history: 'hash',
+  hash: true,
   proxy: {
     '/api': {
       target: 'https://server.wenliaokeji.com',
