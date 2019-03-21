@@ -2,10 +2,10 @@ import React from 'react';
 import { connect } from 'dva';
 import moment from 'moment';
 import Comment from '@/components/Comment';
-import Address from '@/components/Address';
 import styles from './styles.css';
 import iframe from './iframe.less';
 import { Facebook, Instagram } from 'react-content-loader';
+import DeletePage from '../Delete';
 
 class City extends React.Component {
   componentWillMount() {
@@ -19,6 +19,7 @@ class City extends React.Component {
   render() {
     const { detail, comments, content, loading } = this.props;
     const { cover, headImage } = detail || {};
+    // 内容已删除
 
     const loaderEl = (
       <div style={{ margin: '.4rem', paddingTop: '1.2rem', height: '100vh' }}>
@@ -41,7 +42,6 @@ class City extends React.Component {
             </div>
             <p className={styles.readTotal}>{detail && detail.readNum} 阅读</p>
           </div>
-          {/* <Address address={detail && detail.address} /> */}
           <div className={styles.contentWrap}>
             <h1>{detail && detail.title}</h1>
             <div className={iframe.wrap} dangerouslySetInnerHTML={{ __html: content }} />
@@ -67,7 +67,7 @@ class City extends React.Component {
         </section>
       </div>
     );
-    return <div>{loading ? loaderEl : contentEl}</div>;
+    return !loading && !(content || detail) ? <DeletePage /> : <div>{loading ? loaderEl : contentEl}</div>;
   }
 }
 

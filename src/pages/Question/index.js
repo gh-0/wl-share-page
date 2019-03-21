@@ -3,7 +3,6 @@ import { connect } from 'dva';
 import { Facebook, Instagram } from 'react-content-loader';
 import Tag from '@/components/Tag';
 import UserInfo from '@/components/UserInfo';
-import Address from '@/components/Address';
 import Answer from '@/components/Answer';
 import MediaContent from '@/components/MediaContent';
 import styles from './styles.css';
@@ -12,6 +11,7 @@ import hotIcon from '@/assets/ic_questionlist_detail_comment_hot_n@svg.svg';
 import acceptIcon from '@/assets/ic_questionlist_detail_comment_accrpt_n@svg.svg';
 import emptyHolder from '@/assets/空状态@svg.svg';
 import openApp from '@/utils/open-app';
+import DeletePage from '../Delete';
 
 const genesMap = g => {
   return {
@@ -62,7 +62,7 @@ class Question extends React.Component {
       </div>
     );
     if (loading) return loaderEl;
-    return (
+    return !loading && !detail ? <DeletePage /> : (
       <div className={styles.wrap}>
         <section className={styles.question}>
           <div className="clearfix">

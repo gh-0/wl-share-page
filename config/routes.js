@@ -10,22 +10,25 @@ export default [
       {
         path: '/share/question/:id',
         component: './Question',
+      }, {
+        path: '/share/delete',
+        component: './Delete',
       },
     ],
   },
-  
+
   // preview
   {
     path: '/preview/',
     component: '../layouts/BaseLayout',
     routes: [{
-        path: '/preview/city/:id',
-        component: './City'
-      },
-      {
-        path: '/preview/question/:id',
-        component: './Question',
-      },
+      path: '/preview/city/:id',
+      component: './City'
+    },
+    {
+      path: '/preview/question/:id',
+      component: './Question',
+    },
     ],
   },
 
