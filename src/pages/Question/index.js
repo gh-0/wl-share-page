@@ -117,7 +117,7 @@ class Question extends React.Component {
         </section>
         <section className={styles.answerWrap}>
           <h2 className={styles.answerTitle}>
-            全部回答：{answers && answers.length}
+            全部回答：{detail && detail.answerNum}
             <span style={{ float: 'right', color: '#8A8A8F' }} onClick={openApp}>
               人气排序
               <img
