@@ -6,6 +6,7 @@ import styles from './styles.css';
 import iframe from './iframe.less';
 import { Facebook, Instagram } from 'react-content-loader';
 import DeletePage from '../Delete';
+import WechatShareWrap from '@/components/WechatShareWrap';
 
 class City extends React.Component {
   componentWillMount() {
@@ -67,7 +68,13 @@ class City extends React.Component {
         </section>
       </div>
     );
-    return !loading && !(content || detail) ? <DeletePage /> : <div>{loading ? loaderEl : contentEl}</div>;
+    return !loading && !(content || detail) ? (
+      <DeletePage />
+    ) : (
+      <WechatShareWrap>
+        <div>{loading ? loaderEl : contentEl}</div>
+      </WechatShareWrap>
+    );
   }
 }
 
