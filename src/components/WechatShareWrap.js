@@ -5,13 +5,20 @@ import { connect } from 'dva';
 class WechatShareWrap extends Component {
   componentWillMount() {
     const { wx, location } = window;
-
+    const debug = window.location.href.indexOf('debug') !== -1;
     const url = location.href.split('#')[0];
-    fetch(`https://api.wenliaokeji.com/wechat?url=${encodeURI(url)}`)
+    if (debug) {
+      alert(url, encodeURIComponent(url));
+    }
+    fetch(`https://api.wenliaokeji.com/wechat?url=${encodeURIComponent(url)}`)
       .then(res => res.json())
       .then(data => {
         const { appId, timestamp, nonceStr, signature } = data;
+        if (debug) {
+          alert(JSON.stringify(data));
+        }
         wx.config({
+          debug,
           appId,
           timestamp: parseInt(timestamp),
           nonceStr,
@@ -46,7 +53,7 @@ class WechatShareWrap extends Component {
             (question.detail.video &&
               question.detail.video.split('?')[0] +
                 '?x-oss-process=video/snapshot,t_50,f_jpg,w_0,h_0,m_fast') ||
-            'http://www.wenliaokeji.com/qfy-content/uploads/2018/12/b8a36a8bb3a087ae3e00f45fb36fdfc6.png', // 分享图标
+            'https://api.wenliaokeji.com/lALPDgQ9qod4s9LMgMyA_128_128.png_620x10000q90g.jpg', // 分享图标
         });
         wx.onMenuShareTimeline({
           title: `"${question.detail.username}" 遇到了问题，听说你能帮忙？`, // 分享标题
@@ -58,7 +65,7 @@ class WechatShareWrap extends Component {
             (question.detail.video &&
               question.detail.video.split('?')[0] +
                 '?x-oss-process=video/snapshot,t_50,f_jpg,w_0,h_0,m_fast') ||
-            'http://www.wenliaokeji.com/qfy-content/uploads/2018/12/b8a36a8bb3a087ae3e00f45fb36fdfc6.png', // 分享图标
+            'https://api.wenliaokeji.com/lALPDgQ9qod4s9LMgMyA_128_128.png_620x10000q90g.jpg', // 分享图标
         });
       });
     } else if (city.detail) {
