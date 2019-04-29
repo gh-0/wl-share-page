@@ -9,6 +9,9 @@ import DeletePage from '../Delete';
 import WechatShareWrap from '@/components/WechatShareWrap';
 
 class City extends React.Component {
+  state = {
+    height: 100,
+  };
   componentWillMount() {
     const { dispatch, match } = this.props;
     const {
@@ -17,9 +20,27 @@ class City extends React.Component {
     dispatch({ type: 'city/queryDetail', payload: id });
     dispatch({ type: 'city/queryContent', payload: id });
   }
+
+  handleReceiveMessage = e => {
+    const { height, type } = e.data;
+    if (type === 'IFRAME_HEIGHT') this.setState({ height });
+  };
+
+  componentDidMount() {
+    window.addEventListener('message', this.handleReceiveMessage, true);
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('message', this.handleReceiveMessage, true);
+  }
+
   render() {
-    const { detail, comments, content, loading } = this.props;
+    const { detail, comments, content, loading, match } = this.props;
+    const {
+      params: { id },
+    } = match;
     const { cover, headImage } = detail || {};
+    const iframeHeight = this.state.height;
     // 内容已删除
 
     const loaderEl = (
@@ -45,7 +66,24 @@ class City extends React.Component {
           </div>
           <div className={styles.contentWrap}>
             <h1>{detail && detail.title}</h1>
-            <div className={iframe.wrap} dangerouslySetInnerHTML={{ __html: content }} />
+            <div>
+              <iframe
+                height={iframeHeight}
+                scrolling="no"
+                style={{
+                  overflow: 'hidden',
+                  width: '100%',
+                  outline: 'none',
+                  padding: 0,
+                  margin: 0,
+                  border: 0,
+                }}
+                src={`//api.wenliaokeji.com/agent.html?url=${encodeURIComponent(
+                  '//api.wenliaokeji.com/content.html?cityId=' + id
+                )}`}
+              />
+            </div>
+            {/* <div className={iframe.wrap} dangerouslySetInnerHTML={{ __html: content }} /> */}
           </div>
           <section className={styles.topicWrap}>
             <h2>相关话题</h2>
