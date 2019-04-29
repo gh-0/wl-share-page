@@ -78,8 +78,8 @@ class City extends React.Component {
                   margin: 0,
                   border: 0,
                 }}
-                src={`//api.wenliaokeji.com/agent.html?url=${encodeURIComponent(
-                  '//api.wenliaokeji.com/content.html?cityId=' + id
+                src={`/agent.html?url=${encodeURIComponent(
+                  '/content.html?cityId=' + id
                 )}`}
               />
             </div>

@@ -8,7 +8,7 @@ $(function() {
     url:
       (location.host === 'api.wenliaokeji.com'
         ? '/cors-server/article/content/'
-        : '/article/content/') + search.get('cityId'),
+        : '/api/article/content/') + search.get('cityId'),
     success: function(data) {
       $('#content').html(data.content);
       console.log($('#content'));
